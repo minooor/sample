@@ -14,6 +14,22 @@
   </head>
 
   <body>
+    <div id="sp-menu">
+      <h2>MENU</h2>
+      <ul>
+        <li><%= link_to "Top", top_path, class:"menu-list" %></li>
+        <li><%= link_to "Lists", lists_path, class:"menu-list" %></li>
+        <li><%= link_to "New List", new_list_path, class:"menu-list" %></li>
+      </ul>
+    </div>
+    <div id="hm-icon">
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
     <header>
       <h1 class="headline"> All Lists </h1>
     </header>
@@ -33,5 +49,6 @@
     <main>
       <%= yield %>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
